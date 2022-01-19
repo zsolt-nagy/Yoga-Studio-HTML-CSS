@@ -1,6 +1,9 @@
 # Yoga studio website
 
+
 This website is about a hypothetical yoga studio.
+Link: [https://zsolt-nagy.github.io/Yoga-Studio-HTML-CSS/](https://zsolt-nagy.github.io/Yoga-Studio-HTML-CSS/).
+
 
 ## Assets
 
