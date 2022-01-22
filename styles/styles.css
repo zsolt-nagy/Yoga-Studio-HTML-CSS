@@ -86,10 +86,12 @@ body {
 
 /* main-container-with-margin */
 .main-container-with-margin {
-  margin: 0 25%;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
 }
 
-.tagline {
+.tagline, .section-title {
   margin: 5rem 0;
   text-align: center;
   font-size: 2.5rem;
@@ -105,6 +107,29 @@ body {
 }
 
 /* Articles area */
-.articles-container {
+.three-columns-container-with-title {
+  display: grid;
+  grid-template-areas: 
+    "title title title"
+    "class1 class2 class3";
+}
 
+.section-title {
+  grid-area: title;
+} 
+
+.class1-container {
+  grid-area: class1;
+}
+
+.class2-container {
+  grid-area: class2;
+}
+
+class3-container {
+  grid-area: class3;
+}
+
+.three-columns-container-with-title img {
+  width: 80%;
 }
