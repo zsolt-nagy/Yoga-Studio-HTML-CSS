@@ -1,17 +1,38 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-  
 /* Reset */
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
 /* Generic utilities */
 .d-none {
   display: none;
+}
+
+/* Generic components */
+.btn {
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.67rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover,
+.button:focus,
+.button:active {
+  color: white;
+  background-color: black;
+
 }
 
 /* Header area */
@@ -92,7 +113,7 @@ body {
 }
 
 .tagline, .section-title {
-  margin: 5rem 0;
+  margin: 5rem 0 3.5rem;
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -114,10 +135,20 @@ body {
 
 .three-columns-container__item {
   width: 30%;
+  margin-bottom: 5rem;
 }
 
+.column-heading {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
 
+.column-p {
+  margin: 0.5rem 0;
+}
 
 .three-columns-container__item img {
-  width: 80%;
+  width: 100%;
 }
