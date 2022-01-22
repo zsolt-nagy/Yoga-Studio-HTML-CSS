@@ -1,0 +1,110 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+  
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Generic utilities */
+.d-none {
+  display: none;
+}
+
+/* Header area */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+}
+
+.page-header-menu-container {
+  display: flex;
+}
+
+.page-header-menu-container > .menu {
+  display: flex;
+  list-style: none;
+}
+
+.page-header-menu-container > .social {
+  display: flex;
+  list-style: none;
+}
+
+.menu-item {
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+
+.menu-item > .menu-link {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.social .icon {
+  height: 1rem;
+}
+
+/* Main area > header banner */
+.main-banner {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../assets/yoga-class.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4.5rem;
+  letter-spacing: 4px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* main-container-with-margin */
+.main-container-with-margin {
+  margin: 0 25%;
+}
+
+.tagline {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hr {
+  background-color: lightgrey;
+  border: none;
+  height: 1px;
+}
+
+/* Articles area */
+.articles-container {
+
+}
