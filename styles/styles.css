@@ -107,29 +107,17 @@ body {
 }
 
 /* Articles area */
-.three-columns-container-with-title {
-  display: grid;
-  grid-template-areas: 
-    "title title title"
-    "class1 class2 class3";
+.three-columns-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.section-title {
-  grid-area: title;
-} 
-
-.class1-container {
-  grid-area: class1;
+.three-columns-container__item {
+  width: 30%;
 }
 
-.class2-container {
-  grid-area: class2;
-}
 
-class3-container {
-  grid-area: class3;
-}
 
-.three-columns-container-with-title img {
+.three-columns-container__item img {
   width: 80%;
 }
