@@ -152,3 +152,16 @@ body {
 .three-columns-container__item img {
   width: 100%;
 }
+
+/* Testimonial */
+.testimonial-container {
+  margin: 4rem 0;
+}
+
+.testimonial-quote {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 1rem 0 2rem;
+}
+
