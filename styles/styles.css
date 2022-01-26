@@ -177,7 +177,11 @@ body {
 }
 
 /* Media queries */
-/* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ */
+/* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ 
+   Warning: Bootstrap is mobile first, not desktop first, so in Bootstrap,
+   you have min-width and not max-width.
+*/
+
 @media screen and (max-width: 992px) {
   .gallery-image {
     width: 44%;
