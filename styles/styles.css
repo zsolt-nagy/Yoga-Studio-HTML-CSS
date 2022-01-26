@@ -82,7 +82,6 @@ body {
 
 /* Main area > header banner */
 .main-banner {
-  width: 100%;
   height: 600px;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.25),
@@ -109,7 +108,7 @@ body {
 .main-container-with-margin {
   margin: 0 auto;
   width: 80%;
-  max-width: 800px;
+  max-width: 1440px; /*hint: reconsider this with 4k screens */
 }
 
 .tagline, .section-title {
@@ -165,3 +164,34 @@ body {
   margin: 1rem 0 2rem;
 }
 
+/* Instagram gallery */
+.gallery {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 28%;
+  margin: 0 15px 30px 15px;
+}
+
+/* Media queries */
+/* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ */
+@media screen and (max-width: 992px) {
+  .gallery-image {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-image {
+    width: 100%;
+  }  
+}
+
+/*
+@media screen and (max-width: 576px) {
+
+}
+*/
