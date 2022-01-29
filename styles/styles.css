@@ -66,12 +66,8 @@ body {
   grid-area: social-menu;
 }
 
-.page-header-menu-container > .menu {
-  display: flex;
-  list-style: none;
-}
-
-.page-header-menu-container > .social {
+.menu, 
+.social {
   display: flex;
   list-style: none;
 }
@@ -189,6 +185,11 @@ body {
 .gallery-image {
   width: 28%;
   margin: 0 15px 30px 15px;
+}
+
+/* Footer */ 
+footer {
+  display: flex;
 }
 
 /* Media queries */
