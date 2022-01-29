@@ -190,6 +190,8 @@ body {
 /* Footer */ 
 footer {
   display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }
 
 /* Media queries */
@@ -224,6 +226,11 @@ footer {
   .three-columns-container-md__item {
     width: 80%;
   }  
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
