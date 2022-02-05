@@ -140,6 +140,50 @@
             class="southfork-map" 
             loading="lazy"></iframe>
         </section>
+        <label for="form-toggler" class="fixed-link-circle left">?</label>
+        <input type="checkbox" id="form-toggler" />
+        <form action="#" method="GET" class="contact-form">
+          <div class="form-row">
+            <label class="label-top" for="name-field">
+              Name:
+            </label>
+            <input 
+              type="text"
+              id="name-field" 
+              name="name" 
+              placeholder="Enter your name" />
+          </div>
+          <div class="form-row">
+            <label class="label-top" for="email-field">Email:</label>
+            <input 
+              id="email-field"
+              type="email" 
+              name="email" 
+              placeholder="Enter your email" />
+          </div>
+          <div class="form-row">
+            <label class="label-top" for="message-field">Message:</label>
+            <textarea 
+              name="message" 
+              id="message-field" 
+              cols="30" 
+              rows="10"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <div class="form-row">
+            <input 
+              type="checkbox" 
+              name="data-protection" 
+              id="data-protection-field" />
+            <label for="data-protection-field">
+              I accept the data protection guidelines.
+            </label>
+          </div>  
+          <div class="form-row">
+            <button type="submit">Submit</button>
+          </div>        
+        </form> 
+        <a class="fixed-link-circle right" href="#">↑</a>        
       </div>
     </main>
     <footer>
@@ -175,6 +219,6 @@
         </li>
       </ul>
     </footer>
-    <a class="back-to-top" href="#">↑</a>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
