@@ -12,32 +12,13 @@ body {
 
 /* Header area */
 .page-header {
-    display: grid;
-    grid-template-areas:
-        "logo regular-menu social-menu";
-    row-gap: 1.5rem;
-    justify-content: space-between;
-    margin: 1rem 1.5rem;
+    height: 56px;
 }
 
 .logo {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.25rem;
     letter-spacing: 3px;
-    grid-area: logo;
-}
-
-.page-header-menu-container {
-    display: flex;
-}
-
-.page-header-menu-container--regular {
-    grid-area: regular-menu;
-}
-
-.page-header-menu-container--social {
-    grid-area: social-menu;
 }
 
 .menu,
@@ -48,20 +29,16 @@ body {
 }
 
 .menu-item {
-    padding-right: 1rem;
     text-transform: uppercase;
-}
-
-.menu-item>.menu-link {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 1px;
     font-size: 0.75rem;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .social .icon {
     height: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 /* Main area > header banner */
@@ -96,12 +73,6 @@ body {
     letter-spacing: 1px;
 }
 
-.hr {
-    background-color: lightgrey;
-    border: none;
-    height: 1px;
-}
-
 /* Articles area 
   -md suffix: we target medium screen sizes and above
 */
@@ -134,7 +105,7 @@ body {
 
 /* Buttons over the layout */
 .fixed-link-circle {
-    display: none; /* to be overridden in breakpoints */
+    display: flex;
     font-size: 3rem;
     border-radius: 50%;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
@@ -154,68 +125,11 @@ body {
 
 .fixed-link-circle.right {
     right: 2rem;
+    display: none;
 }
 
 .fixed-link-circle.left {
     left: 2rem;
-}
-
-#form-toggler {
-    position: absolute;
-    left: -9999px;
-}
-
-#form-toggler:checked~.contact-form {
-    display: inline-block;
-    position: fixed;
-    bottom: calc(2rem + 100px);
-    left: 2rem;
-    background-color: white;
-}
-
-/* Form styles */
-.contact-form {
-    display: none;
-    width: 325px;
-    padding: 2rem;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-    margin: 1rem auto;
-}
-
-.form-row {
-    margin-top: 0.8rem;
-}
-
-.label-top {
-    display: block;
-}
-
-.label-top,
-[type=checkbox],
-[type=submit] {
-    margin: 0.2rem 0 0.2rem 0;
-}
-
-[type=text],
-[type=email],
-textarea {
-    padding: 0.5rem;
-}
-
-[type=text],
-[type=email],
-textarea {
-    width: 295px;
-    box-sizing: border-box;
-}
-
-[type=submit] {
-    padding: 1rem;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    border: none;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
 }
 
 /* Media queries */
@@ -223,19 +137,8 @@ textarea {
    Warning: Bootstrap is mobile first, not desktop first, so in Bootstrap,
    you have min-width and not max-width.
 */
-@media screen and (min-width: 400px) {
-    .contact-form {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 576px) {   
-    .contact-form {
-        display: none;
-    }
-
-    /* Buttons over the layout */
-    .fixed-link-circle {
+@media screen and (min-width: 320px) {
+    .fixed-link-circle.right {
         display: flex;
     }
 }
@@ -249,5 +152,9 @@ textarea {
 @media screen and (min-width: 992px) {
     .southfork-map {
         height: 675px;
+    }
+
+    .page-header {
+        height: 72px;
     }
 }

@@ -22,8 +22,70 @@
         <link rel="stylesheet" href="./styles/styles-bootstrap.css" />
     </head>
     <body>
-        <header class="container-fluid">
-            <h2>Yoga Sanctuary</h2>
+        <header class="page-header">
+            <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#">Yoga Sanctuary</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerNavigation"
+                        aria-controls="headerNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerNavigation">
+                        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                            <li class="nav-item menu-item">
+                                <a class="nav-link active" aria-current="page" href="#">Classes</a>
+                            </li>
+                            <li class="nav-item dropdown menu-item">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Schedule
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item"><a class="dropdown-item" href="#">Description</a></li>
+                                    <li class="menu-item"><a class="dropdown-item" href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#">Connect</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <section class="container-fluid main-banner">
@@ -33,6 +95,7 @@
                 <section class="row my-4">
                     <p class="col tagline">A yoga studio in the heart of Gotham City offering innovative trainings.</p>
                 </section>
+                <hr class="opacity-25" />
                 <section class="row my-4">
                     <h2 class="col col-12 section-title">This Month</h2>
                     <section class="col col-12 col-md-4">
@@ -59,6 +122,7 @@
                         <button class="btn btn-outline-dark">More info</button>
                     </section>
                 </section>
+                <hr class="opacity-25" />
                 <section class="row my-4">
                     <blockquote class="col col-12 testimonial-quote">
                         <q
@@ -71,6 +135,7 @@
                         <button class="btn btn-outline-dark">Read testimonials</button>
                     </div>
                 </section>
+                <hr class="opacity-25" />
                 <section class="row g-3 my-4">
                     <h2 class="section-title col col-12">Instagram</h2>
                     <img
@@ -104,6 +169,7 @@
                         alt="Instagram pattern 6"
                     />
                 </section>
+                <hr class="opacity-25" />
                 <section class="row my-4 d-none d-sm-flex">
                     <h2 class="section-title">Location</h2>
                     <iframe
@@ -113,23 +179,99 @@
                     ></iframe>
                 </section>
             </section>
+            <!-- Button trigger modal -->
+            <a class="fixed-link-circle left" data-bs-toggle="modal" data-bs-target="#formModal">?</a>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="formModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="formModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="formModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="GET" class="contact-form">
+                                <div class="mb-3">
+                                    <label for="contact-name" class="form-label">Name</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="contact-name"
+                                        name="contact-name"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email" class="form-label">E-mail</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="contact-email"
+                                        name="contact-email"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="3"
+                                        name="message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="data-protection-field"
+                                        name="accept-toc"
+                                        required
+                                    />
+                                    <label class="form-check-label" for="data-protection-field"
+                                        >I accept the data protection guidelines.</label
+                                    >
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <button type="submit" class="btn btn-primary">Submit message</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="fixed-link-circle right" href="#">↑</a>
         </main>
         <footer class="container-fluid">
             <div class="row text-center m-4">
                 <div class="col col-12 col-md-5 order-1">&copy; Yoga Sanctuary 2022</div>
                 <div class="col col-12 col-md-2 order-3 order-md-2">
                     <ul class="social">
-                        <li class="menu-item">
+                        <li>
                             <a href="#">
                                 <img class="icon" src="./assets/envelope-regular.svg" alt="Envelope" />
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li>
                             <a href="#">
                                 <img class="icon" src="./assets/facebook-f-brands.svg" alt="Facebook" />
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li>
                             <a href="#">
                                 <img class="icon" src="./assets/instagram-brands.svg" alt="Instagram" />
                             </a>
